@@ -1,0 +1,34 @@
+{
+  "name": "dogsort",
+  "version": "0.1.0",
+  "description": "An in-place sorting algorithm based on Quicksort and Average Sort",
+  "main": "build/dogsort.js",
+  "scripts": {
+    "build": "gulp",
+    "test": "node tests/compare.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igorpavlov/dogsort.git"
+  },
+  "keywords": [
+    "sorting",
+    "algorithm",
+    "quicksort",
+    "average"
+  ],
+  "author": "Igor Pavlov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/igorpavlov/dogsort/issues"
+  },
+  "homepage": "https://github.com/igorpavlov/dogsort#readme",
+  "devDependencies": {
+    "colors": "*",
+    "timsort": "*",
+    "wikisort": "*",
+    "gulp": "*",
+    "gulp-minify": "*",
+    "gulp-uglify": "*"
+  }
+}
