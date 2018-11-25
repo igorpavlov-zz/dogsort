@@ -13,6 +13,8 @@ Dogsort is an in-place sorting algorithm (additional required memory is `O(1)`) 
 
 ⚠️ Infinity is not yet supported. If you have Infinity as one of the elements, it will not sort. NB: Infinity is not a number though.
 
+⚠️ The algorithm is not yet [stable](https://en.wikipedia.org/wiki/Sorting_algorithm)
+
 ## Comparison with other algorithms
 
 Dogsort is more than twice faster than V8 implementation of `Array.sort` in average for arrays that have size more than 1024 elements (see Roadmap). It also beats Timsort on random arrays but still dramatically loses on sorted arrays just yet, which is expected (see Roadmap). Here are some crude results on arrays of 10^6 size:
@@ -58,6 +60,7 @@ console.log(array)
 
 ## Roadmap
 
+- Make algorithm [stable](https://en.wikipedia.org/wiki/Sorting_algorithm)
 - Improve performance for small arrays
 - Improve performance for sorted arrays
 - Add a possibility for a custom comparison function
